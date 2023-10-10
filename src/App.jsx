@@ -39,7 +39,7 @@ function App() {
         }
         setDate(date);
       });
-  }, [search]);
+  }, [location?.localtime, search]);
 
   const handleChange = (e) => {
     setSearch(e.target.value);
